@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+
+<body class="bg-darkblue">
+    <header>
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container">
+                <div class="logo d-flex gap-3 w-50 me-auto">
+                    <img src="./images/logo.png" width="80px" height="50px" alt="">
+                    <a class="navbar-brand position-relative text-white" href="./index.html">Weather</a>
+                </div>
+                <button class="navbar-toggler vertical-pill mb-3" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse w-50" id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                        <li class="nav-item fs-6 px-2 rounded-pill mx-1">
+                            <a class="nav-link text-white " aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item fs-6 px-2 rounded-pill mx-1 ">
+                            <a class="nav-link text-white" href="#">News</a>
+                        </li>
+                        <li class="nav-item fs-6 px-2 rounded-pill mx-1 ">
+                            <a class="nav-link text-white" href="#">Live Cameras</a>
+                        </li>
+                        <li class="nav-item fs-6 px-2 rounded-pill mx-1 ">
+                            <a class="nav-link text-white" href="#">Photos</a>
+                        </li>
+                        <li class="nav-item fs-6 px-2 rounded-pill mx-1  active-border border-2  ">
+                            <a class="nav-link text-white active" href="./contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="bg-darkmediumblue rounded-pill p-2">
+            <span class="text-secondary"><a href="./index.html" class="text-decoration-none text-secondary ">Home</a> <i
+                    class="fa-solid fa-arrow-right"></i> Contact</span>
+        </div>
+        <main class=" m-5 d-lg-flex gap-5 justify-content-between">
+            <section class="map bg-darkmediumblue rounded-2">
+                <div class="map-map" data-latitude="-6.897789" data-longitude="107.621735"></div>
+                <ul class="list-unstyled p-2">
+                    <li class="d-block p-1"><i class="fa-solid fa-location-dot text-cyan"></i>
+                        <address class="text-secondary d-inline">Company Name INC.
+                            2803 Avenue Street, Los Angeles</address>
+                    </li>
+                    <li class="text-secondary d-inline-block p-1"> <i class="fa-solid fa-phone text-cyan"></i> +1 800
+                        314 235</li>
+                    <li class="text-secondary d-inline-block p-1"><i class="fa-solid fa-envelope text-cyan"></i>
+                        contact@companyname.com</li>
+                </ul>
+            </section>
+            <section class="contact-form">
+                <h2 class="text-white fw-lighter ">Contact us</h2>
+                <p class="text-secondary fw-lighter">Lorem ipsum dolor sit amet consectetur, adipisicing elit. A dolores quia odio inventore placeat praesentium eum ipsum laborum asperiores voluptatibus. Deleniti libero accusamus quis qui!</p>
+                <form class="row g-3">
+                    <div class="col-lg-6">
+                        <input type="text" class="rounded-pill border border-secondary bg-darkblue p-2 ps-3 form-control" id="inputEmail4" placeholder="Your name...">
+                    </div>
+                    <div class="col-lg-6">
+                        <input type="email" class="rounded-pill border border-secondary bg-darkblue p-2 ps-3 form-control" id="inputPassword4" placeholder="Email Address...">
+                    </div>
+                    <div class="col-lg-6">
+                        <input type="text" class="rounded-pill border border-secondary bg-darkblue p-2 ps-3 form-control" id="inputAddress" placeholder="Company name...">
+                    </div>
+                    <div class="col-lg-6">
+                        <input type="text" class="rounded-pill border border-secondary bg-darkblue p-2 ps-3 form-control" id="inputAddress2"
+                            placeholder="Website...">
+                    </div>
+                    <textarea name="message" id="message" class=" rounded-pill border border-secondary bg-darkblue p-2 ps-3" placeholder="Message..."></textarea>
+                        <button type="submit" class="btn text-white bg-cyan w-auto ms-auto rounded-pill" id="sumbit-form">Submit</button>
+                </form>
+            </section>
+        </main>
+    </div>
+    <footer class="p-5 ">
+        <div class="container">
+            <div class="d-lg-flex gap-lg-3">
+                <form class="flex-grow-1">
+                    <div class="input-group mb-3 position-relative ">
+                        <input type="text" class="form-control rounded-pill bg-darkblue text-white border-dark py-2 "
+                            placeholder="Enter your email to subscribe...">
+                        <input class=" rounded-pill text-white bg-cyan border-cyan position-absolute px-3 py-1"
+                            type="button" value="Subscribe" id="Subscribe-btn"></input>
+                    </div>
+                </form>
+                <ul class="d-flex justify-content-start align-items-center gap-2 list-unstyled socialsList">
+                    <li class="rounded-circle border border-dark p-2 bg-darkblue"><i
+                            class=" text-cyan fa-brands fa-facebook"></i></li>
+                    <li class="rounded-circle border border-dark p-2 bg-darkblue"><i
+                            class=" text-cyan fa-brands fa-twitter"></i></li>
+                    <li class="rounded-circle border border-dark p-2 bg-darkblue"><i
+                            class=" text-cyan fa-brands fa-google-plus"></i></li>
+                    <li class="rounded-circle border border-dark p-2 bg-darkblue"><i
+                            class=" text-cyan fa-brands fa-pinterest"></i></li>
+                </ul>
+            </div>
+            <p class="text-secondary">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+        </div>
+    </footer>
+    <script src="./js/index.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

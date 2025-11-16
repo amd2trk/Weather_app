@@ -1,0 +1,180 @@
+:root{
+    --main-color:rgb(0, 154, 214);
+    --main-background-color:#1e202b;
+    --secondary-background-color:#262936;
+    --lighter-background-color:#313442
+}
+body,header,nav{
+    background-color: var(--main-background-color);
+}
+header{
+    padding-block: 50px;
+}
+.navbar .logo .navbar-brand{
+    font-weight: 600;
+}
+.navbar .logo .navbar-brand::after{
+    content: "tagline goes here";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 0.5rem;
+    color: rgb(108,117,125);
+}
+footer{
+    background-color: var(--secondary-background-color);
+}
+.nav-item .active{
+    color: var(--main-color) !important;
+}
+.active-border{
+    border-color: var(--main-color) !important;
+}
+.bg-cyan{
+    background-color: var(--main-color);
+}
+.border-cyan{
+    border-color: var(--main-color);
+}
+.bg-darkblue{
+    background-color: var(--main-background-color);
+}
+.input-group .form-control::placeholder{
+    color: rgb(108,117,125);
+    font-size: 0.75rem;
+}
+.text-cyan{
+    color: var(--main-color);    
+}
+.search{
+    background-image: url(../images/imgi_8_banner.png);
+    background-size: cover;
+    background-position: center;
+    min-height: 50%;
+}
+.find-location{
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+.bg-darklightblue{
+    background-color: var(--lighter-background-color);
+}
+.bg-darkmediumblue{
+    background-color: var(--secondary-background-color);
+}
+li,button{
+    cursor: pointer;
+}
+#Subscribe-btn{
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    z-index: 5;
+}
+#findBtn{
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    z-index: 5;
+}
+.socialsList li,.socialsList li i{
+    transition: all 0.3s;
+}
+.socialsList li:hover{
+    background-color: var(--main-color);
+}
+.socialsList li:hover i{
+    color: white;
+}
+.form-control::selection{
+    background-color: var(--main-background-color) !important;
+}
+nav li{
+    border-width:2px ;
+    border-color: transparent;
+    border-style: solid;
+    transition: all 0.3s;
+}
+nav li:hover a{
+    color: var(--main-color) !important;
+}
+nav li:hover {
+    border-color: var(--main-color) !important;
+}
+.contact-form div>input::placeholder,.contact-form textarea::placeholder{
+    color: grey;
+    font-size: 0.75rem;
+}
+.contact-form div>input:hover,.contact-form textarea:hover{
+    border-color: var(--main-color) !important;
+    border-width: 3px !important;
+}
+.contact-form div>input:focus,.contact-form textarea:focus{
+    box-shadow: none !important;
+    background-color: transparent;
+    caret-color: white;
+}
+.navbar-toggler{
+    border-color: transparent;
+    outline-color: var(--main-color) !important;
+    outline-width: 2px;
+    transition: all 0.15s ease-in-out;
+}
+.navbar-toggler:hover,.navbar-toggler:focus{
+    border-color: var(--main-color);
+    border-width: 3px;
+    box-shadow: 0 0 0 var(--main-color) !important;
+}
+span.navbar-toggler-icon{
+   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(255,255,255)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M8 7h14M8 15h14M8 23h14'/%3e%3c/svg%3e");
+}
+span.navbar-toggler-icon:hover{
+   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(0,154,214)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M8 7h14M8 15h14M8 23h14'/%3e%3c/svg%3e");
+}
+footer input.form-control:focus{
+    box-shadow: none !important;
+    background-color: var(--main-background-color);
+    caret-color: white;
+}
+.search input.form-control:focus{
+    box-shadow: none !important;
+    background-color: var(--main-background-color);
+    caret-color: white;
+}
+.vertical-pill {
+    width: 60px;   
+    height: 70px; 
+    border-radius: 50px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.display-weather .col-lg-4:nth-child(1) header{
+    background-color: #2D303D;
+}
+.display-weather .col-lg-4:nth-child(2) {
+    background-color: #252835;
+}
+.display-weather .col-lg-4:nth-child(2) header {
+    background-color: #21242F;
+}
+.display-weather .col-lg-4:nth-child(3) header{
+    background-color: #2D303D;
+}
+.display-weather{
+    margin-top: -150px;
+}
+.input-group input:nth-child(2)[value="Find"]{
+    font-size: 1rem;
+}
+.input-group input:nth-child(2)[value="Subscribe"]{
+    font-size: 1rem;
+}
+#submit-form:active{
+    background-color: var(--main-color);
+}
+img{
+    width: 70px;
+}
